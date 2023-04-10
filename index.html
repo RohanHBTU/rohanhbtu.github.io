@@ -17,7 +17,7 @@
           type = "image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
   <title>Rohan Kumar Singh- AI/ML</title>
-  <meta name="description" content="Raj Gautam- Software Developer and Mentor" />
+  <meta name="description" content="Rohan Kumar Singh- AI/ML" />
 </head>
 
 <body>
@@ -63,7 +63,7 @@
         </li>
       </ul>
     </div>
-    <button class="btn btn-inv btn-sm">Download CV</button>
+    <a href="https://drive.google.com/file/d/1ktYLJwmyhpUrOaZwjKzz2ODlPm_3Yo6V/view?usp=sharing" target="_blank"><button class="btn btn-inv btn-sm">Download CV</button></a>
   </header>
   <script>
     $(function() {
@@ -98,8 +98,8 @@
            And I'm a <span class="text sec-text">AI/ML Developer</span>
           </span>
         </h1>
-        <button class="btn btn-theme home-hero__btn-theme"><a href="./index.html#projects">Projects</a></button>
-        <button class="btn btn-inv home-hero__btn-theme">Contact</button>
+        <a href="./index.html#projects"><button class="btn btn-theme home-hero__btn-theme">Projects</button></a>
+        <a href="./index.html#contact"><button class="btn btn-inv home-hero__btn-theme">Contact</button></a>
       </div>
       <div>
         <img src="assets/Raj_new.jpg" style="height: 400px;"/>
@@ -129,7 +129,7 @@
                 I am currently working as a Data Science Intern in <b>SamagraX(Remote)</b>.
               </span>
             </p>
-            <button class="btn btn-theme about__btn-theme" ><a href="./index.html#projects">Projects</a></button>
+            <a href="./index.html#projects"><button class="btn btn-theme about__btn-theme" >Projects</button></a>
           </div>
           <div class="about__skill-info">
             <h3 class="heading-quaternary about__heading-quaternary">
@@ -324,19 +324,19 @@
       </h2>
       <div class="main-section__content">
         <div class="contact__form-cont">
-          <form class="contact__form">
+          <form class="contact__form" action="https://formsubmit.co/rohank587@gmail.com" method="post">
             <div class="contact__form-field">
               <label for="name" class="contact__form-field-label">Name</label>
-              <input placeholder="Enter Your Name" type="text" class="contact__form-field-input" />
+              <input placeholder="Enter Your Name" type="text" name="name" class="contact__form-field-input" required/>
             </div>
             <div class="contact__form-field">
               <label for="name" class="contact__form-field-label">Email</label>
-              <input placeholder="Enter Your Email" type="text" class="contact__form-field-input" />
+              <input placeholder="Enter Your Email" type="email" name="email" class="contact__form-field-input" required/>
             </div>
             <div class="contact__form-field">
               <label for="name" class="contact__form-field-label">Message</label>
               <textarea placeholder="Enter Your Message" name="message" id="" cols="30" rows="10"
-                class="contact__form-field-input"></textarea>
+                class="contact__form-field-input" required></textarea>
             </div>
             <button type="submit" class="contact__form-submit">Submit</button>
           </form>
