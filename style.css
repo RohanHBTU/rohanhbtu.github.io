@@ -15,7 +15,9 @@ img.back-to-top {
   transition: 0.7s;
   text-decoration: none;
   border-radius: 50%;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
 }
+
 
 section.zxc {
 width: 100%;
