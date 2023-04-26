@@ -87,7 +87,7 @@ const textLoad = () => {
     text.textContent = "Coder";
   }, 0);
   setTimeout(() => {
-    text.textContent = "Mentor";
+    text.textContent = "Developer";
   }, 4000);
   setTimeout(() => {
     text.textContent = "Student";
