@@ -1030,6 +1030,7 @@ a {
   font-weight: 400;
   letter-spacing: 1px;
   background-color: var(--bg-inv);
+  color: var(--primary-dark);
 }
 
 /* Code for Modern Browsers */

@@ -28,7 +28,7 @@
           src="./assets/Raj.jpg"
           alt="logo Image" class="main-header__logo-img" />
       </div>
-      <h4 class="main-header__logo-text">Rohan Kumar Singh</h4>
+      <h4 class="main-header__logo-text">Rohan Kr. Singh</h4>
     </div>
     <nav class="main-header__navigation">
       <ul class="main-header__navigation-links">
@@ -65,10 +65,9 @@
     </div>
     <table>
     <tr>
-    <td><h3 class="main-header__logo-text">Theme:</h3></td>
     <td><input type="checkbox" id="mode"></td>
     <script src="index.js"></script>
-    <td><a href="https://drive.google.com/file/d/1itW5e0iamKX6lSLK7_QF2umzLAp95xu0/view?usp=sharing" target="_blank"><button class="btn btn-inv btn-sm">Download CV</button></a></td>
+    <td><a href="https://drive.google.com/file/d/1itW5e0iamKX6lSLK7_QF2umzLAp95xu0/view?usp=sharing" target="_blank"><button class="btn btn-inv btn-sm">Resume</button></a></td>
   </tr></table>
   </header>
   <script>
@@ -142,22 +141,23 @@
               My Skills
             </h3>
             <ul class="about__skills">
-              <li class="about__skill">python</li>
               <li class="about__skill">c/c++</li>
+              <li class="about__skill">python</li>
               <li class="about__skill">tensorflow</li>
               <li class="about__skill">PyTorch</li>
               <li class="about__skill">NLTK</li>
               <li class="about__skill">spacy</li>
               <li class="about__skill">pandas</li>
-              <li class="about__skill">optuna</li>
-              <li class="about__skill">Hugging Face</li>
               <li class="about__skill">numpy</li>
+              <li class="about__skill">git</li>
+              <li class="about__skill">flask</li>
+              <li class="about__skill">fastapi</li>
+              <li class="about__skill">docker</li>
+              <li class="about__skill">Hugging Face</li>
               <li class="about__skill">Scikit</li>
               <li class="about__skill">seaborn</li>
               <li class="about__skill">gensim</li>
               <li class="about__skill">matplotlib</li>
-              <li class="about__skill">git</li>
-              <li class="about__skill">flask</li>
               <li class="about__skill">mysql</li>
               <li class="about__skill">mongodb</li>
               <li class="about__skill">linux</li>
@@ -174,6 +174,9 @@
   <section class="skills-showcase">
     <ul class="skills-showcase__list">
       <li class="skills-showcase__list-item">
+        <i class="devicon-cplusplus-plain colored"></i>
+      </li>
+      <li class="skills-showcase__list-item">
         <i class="devicon-python-plain colored"></i>
       </li>
       <li class="skills-showcase__list-item">
@@ -181,9 +184,6 @@
       </li>
       <li class="skills-showcase__list-item">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/1694px-PyTorch_logo_icon.svg.png" height="50" width="42">
-      </li>
-      <li class="skills-showcase__list-item">
-        <i class="devicon-pandas-original colored"></i>
       </li>
       <li class="skills-showcase__list-item">
         <i class="devicon-numpy-original colored"></i>
@@ -198,13 +198,13 @@
 <i class="devicon-mysql-plain colored"></i>
       </li>
       <li class="skills-showcase__list-item">
-        <i class="devicon-linux-plain colored"></i>
-      </li>
-      <li class="skills-showcase__list-item">
         <i class="devicon-mongodb-plain colored"></i>
       </li>
       <li class="skills-showcase__list-item">
-        <i class="devicon-cplusplus-plain colored"></i>
+        <i class="devicon-docker-plain colored"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-linux-plain colored"></i>
       </li>
     </ul>
   </section>
@@ -277,19 +277,33 @@
 
               <p class="text-primary projects__list-item-text-primary">
                 <span>
-                  This is a NMT (neural machine translation) model using Seq2Seq with Bahdanau attention mechanism comprising of GRU RNN cell. It transforms Hinglish text (in roman script) to English text.`
+                  This is a NMT (neural machine translation) model using Seq2Seq with Bahdanau attention mechanism comprising of GRU RNN cell. Served using FastAPI and achieved BLEU score of 40 by training on 200K samples (Hinglish to English). It transforms Hinglish text (in roman script) to English text.`
                 </span>
                
                 <span>
                   Special thanks to Google research for making the dataset available publicly on github. Still, scarcity of Hinglish corpus(Roman script) is affecting the BLEU score.
                 </span>
               </p>
-              <a href="https://huggingface.co/spaces/RohanHBTU/hinglish-en-transl" target="_blank"><button class="btn btn-theme projects__btn-theme">
-                Live Link
-              </button></a>
-              <a href="https://github.com/RohanHBTU/Hinglish-Transformer" target="_blank"><button class="btn btn-inv projects__btn-inv">Code Link</button></a>
+              <div class="dropdown">
+                <button class="btn btn-theme projects__btn-theme">
+                  Live Link
+                </button>
+                  <div class="dropdown-content">
+                    <a href="https://huggingface.co/spaces/RohanHBTU/hinglish-en-transl" target="_blank">HuggingFace</a>
+                    <a href="https://rohanhbtu-hinglish-fastapi.hf.space/docs" target="_blank">FastAPI</a>
+                  </div>
+                </div>
+              
+                <div class="dropdown">
+                <button class="btn btn-inv projects__btn-inv">Code Link</button>
+                <div class="dropdown-content-inv">
+                  <a href="https://github.com/RohanHBTU/Hinglish-Transformer" target="_blank">HuggingFace</a>
+                  <a href="https://huggingface.co/spaces/RohanHBTU/Hinglish_FastAPI/tree/main" target="_blank">FastAPI</a>
+                </div>
+                </div>
             </div>
           </div>
+          
           <div class="projects__list-item projects__list-item--inv">
             <div class="projects__list-item-count">
               <span class="projects__list-item-count-num"> 3 </span>
@@ -298,28 +312,31 @@
             </div>
             <div class="projects__list-item-details">
               <div class="projects__list-item-img-cont">
-                <img src="./assets/mock2.png" alt="Project Image" class="projects__list-item-img" />
+                <img src="./assets/mock4.png" alt="Project Image" class="projects__list-item-img" />
               </div>
               <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Recommender System
+                Bangalore Home Price Prediction
               </h3>
 
               <p class="text-primary projects__list-item-text-primary">
                 <span>
-                  This is an end-to-end ML project based on Book Recommendation Dataset available on kaggle capable of finding similar or recommended books based on collaborative filtering technique(Popularity based RS is included in notebook).
+                  This is a end to end ML project which implemented Linear Regression model using dockers and automated workflow with Github Actions. I have used Flask Server as backend and HTML, CSS for frontend.
                 </span>
                 <span>
-                  Special thanks to TMDDB for making the dataset available publicly on kaggle.
+                  Special thanks to AMITABHACHAKRABORTY for making the Bengaluru price dataset available publicly on kaggle.
                 </span>
               </p>
-              <a href="https://rohanhbtu-recommender-system-app-md5aee.streamlit.app/" target="_blank">
+              <a href="https://bhp-docker.onrender.com/" target="_blank">
               <button class="btn btn-theme projects__btn-theme">
                 Live Link
               </button></a>
-              <a href="https://github.com/RohanHBTU/recommender_system" target="_blank">
+              <a href="https://github.com/RohanHBTU/bhp-docker-deployment" target="_blank">
               <button class="btn btn-inv projects__btn-inv">Code Link</button></a>
             </div>
           </div>
+
+
+          
           <div class="projects__list-item">
             <div class="projects__list-item-details">
               <div class="projects__list-item-img-cont">
@@ -359,25 +376,25 @@
             </div>
             <div class="projects__list-item-details">
               <div class="projects__list-item-img-cont">
-                <img src="./assets/mock4.png" alt="Project Image" class="projects__list-item-img" />
+                <img src="./assets/mock2.png" alt="Project Image" class="projects__list-item-img" />
               </div>
               <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Home Price Prediction
+                Recommender System
               </h3>
 
               <p class="text-primary projects__list-item-text-primary">
                 <span>
-                  This is a end to end ML project based on Bengaluru(formerly Bangalore) price dataset available on kaggle capable of predicting price of real estate in Bengaluru region with good precision and accuracy using a regressor.
+                  This is an end-to-end ML project based on Book Recommendation Dataset available on kaggle capable of finding similar or recommended books based on collaborative filtering technique(Popularity based RS is included in notebook).
                 </span>
                 <span>
-                  Special thanks to AMITABHACHAKRABORTY for making the dataset available publicly on kaggle.
+                  Special thanks to TMDDB for making the dataset available publicly on kaggle.
                 </span>
               </p>
-              <a href="https://rohanhbtu-bhp-streamlit-main-s36q6a.streamlit.app/" target="_blank">
+              <a href="https://rohanhbtu-recommender-system-app-md5aee.streamlit.app/" target="_blank">
               <button class="btn btn-theme projects__btn-theme">
                 Live Link
               </button></a>
-              <a href="https://github.com/RohanHBTU/bhp-streamlit" target="_blank">
+              <a href="https://github.com/RohanHBTU/recommender_system" target="_blank">
               <button class="btn btn-inv projects__btn-inv">Code Link</button></a>
             </div>
           </div>
