@@ -84,13 +84,13 @@ const text = document.querySelector(".sec-text");
 
 const textLoad = () => {
   setTimeout(() => {
-    text.textContent = "Coder";
+    text.textContent = "NLP";
   }, 0);
   setTimeout(() => {
-    text.textContent = "Developer";
+    text.textContent = "Open Source";
   }, 4000);
   setTimeout(() => {
-    text.textContent = "Student";
+    text.textContent = "Research";
   }, 8000); //1s = 1000 milliseconds
 };
 

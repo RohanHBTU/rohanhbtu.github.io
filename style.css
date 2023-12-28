@@ -15,7 +15,7 @@ img.back-to-top {
   transition: 0.7s;
   text-decoration: none;
   border-radius: 50%;
-  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 35%);
 }
 
 input[type="checkbox"]{
@@ -208,8 +208,10 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 body{
+  color: rgba(55, 65, 81, 1);
   --absolut: #fff;
   --text-light: #fff;
+  --catchy: rgba(92,189,170,255);
   --bg-inv: #fafafa;
   --primary-dark: rgba(55, 65, 81, 1);
   --secondary-dark: rgba(55, 65, 81, 0.7);
@@ -225,6 +227,7 @@ body.dark{
   background-color : rgb(55, 65, 81);
   color :rgba(243, 244, 246,1);
   --absolut: #000;
+  --catchy: rgba(92,189,170,255);
   --bg-inv: rgba(32, 46, 69, 0.904);
   --text-light: rgba(55, 65, 81, 1);
   --primary-dark: rgba(243, 244, 246,1);
@@ -232,6 +235,91 @@ body.dark{
   --bg-btn: rgba(219, 233, 29, 0.897);
   --bg-btn-inv: rgba(45, 49, 54, 0.5);
 }
+
+.github{
+	position:fixed;
+  text-decoration: none;
+	width:60px;
+	height:60px;
+	bottom:120px;
+	left:20px;
+	background-color: var(--catchy);
+	color:#FFF;
+	border-radius:50%;
+	text-align:center;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 35%);
+  padding-top: 15px;
+  margin: auto;
+}
+
+.lin{
+	position:fixed;
+  text-decoration: none;
+	width:60px;
+	height:60px;
+	bottom:200px;
+	left:20px;
+	background-color: var(--catchy);
+	color:#FFF;
+	border-radius:50%;
+	text-align:center;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 35%);
+  padding-top: 15px;
+  margin: auto;
+}
+
+.twitter{
+	position:fixed;
+  text-decoration: none;
+	width:60px;
+	height:60px;
+	bottom:280px;
+	left:20px;
+	background-color: var(--catchy);
+	color:#FFF;
+	border-radius:50%;
+	text-align:center;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 35%);
+  padding-top: 15px;
+  margin: auto;
+}
+
+.insta{
+	position:fixed;
+  text-decoration: none;
+	width:60px;
+	height:60px;
+	bottom:360px;
+	left:20px;
+	background-color: var(--catchy);
+	color:#FFF;
+	border-radius:50%;
+	text-align:center;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 35%);
+  padding-top: 15px;
+  margin: auto;
+}
+
+.kaggle{
+	position:fixed;
+  text-decoration: none;
+	width:60px;
+	height:60px;
+	bottom:440px;
+	left:20px;
+	background-color: var(--catchy);
+	color:#FFF;
+	border-radius:50%;
+	text-align:center;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 35%);
+  padding-top: 15px;
+  margin: auto;
+}
+
+.inv {
+  filter: invert(100%);
+}
+
 
 ul {
   list-style: none;
@@ -639,6 +727,29 @@ a {
   width: 246px;
   overflow: hidden;
 }
+
+.cath {
+  color: var(--catchy);
+  font-weight: 600;
+  position: relative;
+}
+
+.cath.first-text {
+  color: #fff;
+}
+
+.cath.sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--text-light);
+  border-left: 2px solid #000;
+  animation: animate 4s steps(12) infinite;
+}
+
 .container .text {
   position: relative;
   color: var(--primary-dark);
@@ -654,12 +765,12 @@ a {
   top: 0;
   left: 0;
   height: 100%;
-
   width: 100%;
   background-color: var(--text-light);
   border-left: 2px solid #000;
   animation: animate 4s steps(12) infinite;
 }
+
 @keyframes animate {
   40%,
   60% {
@@ -734,7 +845,20 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
-
+.dp {
+  height: 400px;
+  border-radius: 15px;
+  filter: grayscale(100%);
+  transition: 0.5s;
+  transform: rotate(10deg);
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 15px 0 rgba(0, 0, 0, 0.26);*/
+  
+}
+.dp:hover {
+  filter: grayscale(0%);
+  transform: rotate(0);
+  box-shadow: 10px 10px 13px 1px rgb(0 0 0 / 35%);
+}
 .about__skill {
   font-size: 1.6rem;
   text-transform: uppercase;
@@ -1011,7 +1135,7 @@ a {
 }
 
 .contact__form-field-label {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
   color: var(--primary-dark);
   letter-spacing: 1px;
@@ -1024,7 +1148,7 @@ a {
   padding: 2rem;
   width: 100%;
   border: 2px solid var(--bg-inv);
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   resize: none;
   border-radius: 5px;
   font-weight: 400;
@@ -1083,9 +1207,9 @@ a {
 }
 
 .contact__form-submit {
-  padding: 2rem;
+  padding: 1.8rem;
   width: 100%;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   border: none;
   letter-spacing: 1px;
   font-family: inherit;
