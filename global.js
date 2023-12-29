@@ -1,13 +1,13 @@
 $(document).ready(function() {
 	var btt = $('.back-to-top');
 
-	btt.on('click', function(e) {
-	$('html, body').animate({
-	scrollTop: 0
-	}, 1000);
+	//btt.on('click', function(e) {
+	//$('html, body').animate({
+	//scrollTop: 0
+	//}, 1000);	
 
-	e.preventDefault();
-	});
+	//e.preventDefault();
+	//});
 
 	$(window).on('scroll', function() {
 	var self = $(this),

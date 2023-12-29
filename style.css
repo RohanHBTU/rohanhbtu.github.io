@@ -218,6 +218,7 @@ body{
   --bg-light: rgba(243, 244, 246,0.3);
   --bg-btn: rgba(67, 56, 202, 0.8);
   --bg-btn-inv: rgba(67, 56, 202, 0.8);
+  --icon-inv: invert(100%);
 
   /* css style */
   /*background-color: var(--text-light);*/
@@ -234,6 +235,7 @@ body.dark{
   --secondary-dark: rgba(243, 244, 246, 0.515);
   --bg-btn: rgba(219, 233, 29, 0.897);
   --bg-btn-inv: rgba(45, 49, 54, 0.5);
+  --icon-inv: invert(100%);
 }
 
 .github{
@@ -241,8 +243,8 @@ body.dark{
   text-decoration: none;
 	width:60px;
 	height:60px;
-	bottom:120px;
-	left:20px;
+	bottom:100px;
+	right:20px;
 	background-color: var(--catchy);
 	color:#FFF;
 	border-radius:50%;
@@ -257,8 +259,8 @@ body.dark{
   text-decoration: none;
 	width:60px;
 	height:60px;
-	bottom:200px;
-	left:20px;
+	bottom:180px;
+  right:20px;
 	background-color: var(--catchy);
 	color:#FFF;
 	border-radius:50%;
@@ -273,8 +275,8 @@ body.dark{
   text-decoration: none;
 	width:60px;
 	height:60px;
-	bottom:280px;
-	left:20px;
+	bottom:260px;
+	right:20px;
 	background-color: var(--catchy);
 	color:#FFF;
 	border-radius:50%;
@@ -289,8 +291,8 @@ body.dark{
   text-decoration: none;
 	width:60px;
 	height:60px;
-	bottom:360px;
-	left:20px;
+	bottom:340px;
+	right:20px;
 	background-color: var(--catchy);
 	color:#FFF;
 	border-radius:50%;
@@ -305,8 +307,8 @@ body.dark{
   text-decoration: none;
 	width:60px;
 	height:60px;
-	bottom:440px;
-	left:20px;
+	bottom:420px;
+	right:20px;
 	background-color: var(--catchy);
 	color:#FFF;
 	border-radius:50%;
@@ -317,7 +319,7 @@ body.dark{
 }
 
 .inv {
-  filter: invert(100%);
+  filter: var(--icon-inv);
 }
 
 
