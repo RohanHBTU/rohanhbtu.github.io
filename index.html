@@ -32,9 +32,7 @@
       <ul class="main-header__navigation-links">
         <li class="main-header__navigation-link"><a href="./index.html"> Home </a></li>
         <li class="main-header__navigation-link"><a href="./index.html#about"> About </a></li>
-        <li class="main-header__navigation-link">
-          <a href="./index.html#projects"> Projects </a>
-        </li>
+        <li class="main-header__navigation-link"><a href="./index.html#projects"> Projects </a></li>
         <li class="main-header__navigation-link"><a href="./index.html#contact"> Contact </a></li>
       </ul>
     </nav>
@@ -67,7 +65,21 @@
     <script src="index.js"></script>
     <td><a href="https://drive.google.com/file/d/1ZqZHzQAL3nxFsAoSMwPxjOcySEZzxfzY/view?usp=sharing" target="_blank"><button class="btn btn-inv btn-sm">Resume</button></a></td>
   </tr></table>
+    <script>
+      // When the user scrolls the page, execute myFunction 
+      window.onscroll = function() {myFunction()};
+      
+      function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+      }
+    </script>
   </header>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
   <script>
     $(function() {
      $('.scroll-down').click (function() {
@@ -463,8 +475,8 @@
             <a href="./index.html#contact">Contact</a>
           </li>
         </ul>
-        <div class="main-footer__mid-line"></div>
-        <div class="main-footer__socials">
+        
+        <!--<div class="main-footer__socials">
           <a href="https://github.com/RohanHBTU" class="main-footer__social-link" target="_blank">
             <img
               src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
@@ -486,9 +498,10 @@
               src="assets/download.png"
               alt="" class="main-footer__social-link-icon" />
           </a>
-        </div>
+        </div>-->
       </div>
     </div>
+    <div class="main-footer__mid-line"></div>
     <div class="main-footer__bottom">
       <div class="main-container">
         <p class="main-footer__bottom-txt">
