@@ -9,14 +9,14 @@ padding: 0;
 .progress-container {
   position: fixed;
   width: 100%;
-  top:100px;
-  height: 5px;
+  top:97px;
+  height: 6px;
   background: rgba(0,0,0,0);
   z-index: 1200;
 }
 
 .progress-bar {
-  height: 5px;
+  height: 6px;
   background: rgba(92,189,170,255);
   width: 0%;
 }
@@ -730,8 +730,8 @@ a {
 }
 .main_container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10rem;
+  grid-template-columns: 1.35fr 1fr;
+  grid-gap: 1rem;
 }
 
 @media (max-width: 37.5em) {
@@ -875,7 +875,7 @@ a {
 .dp:hover {
   filter: grayscale(0%);
   transform: rotate(0);
-  box-shadow: 10px 10px 13px 1px rgb(0 0 0 / 35%);
+  box-shadow: 10px 10px 13px 1px rgb(0 0 0 / 32%);
 }
 .about__skill {
   font-size: 1.6rem;

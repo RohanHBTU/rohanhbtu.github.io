@@ -84,18 +84,21 @@ const text = document.querySelector(".sec-text");
 
 const textLoad = () => {
   setTimeout(() => {
-    text.textContent = "NLP";
+    text.textContent = "Machine Learning";
   }, 0);
   setTimeout(() => {
-    text.textContent = "Open Source";
+    text.textContent = "NLP";
   }, 4000);
   setTimeout(() => {
+    text.textContent = "Open Source";
+  }, 8000);
+  setTimeout(() => {
     text.textContent = "Research";
-  }, 8000); //1s = 1000 milliseconds
+  }, 12000); //1s = 1000 milliseconds
 };
 
 textLoad();
-setInterval(textLoad, 12000);
+setInterval(textLoad, 16000);
 const root = document.documentElement;
 
 const hexToRgb = (hex) => {
