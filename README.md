@@ -33,7 +33,7 @@ Here are some highlighted projects in this repository:
    - Used Flask Server as backend and HTML, CSS for frontend
    - Python, Machine Learning, Flask, Docker, Github Actions, EDA, Feature Engineering, Git, HTML, CSS
 
-Feel free to explore the [Projects](./projects) directory for a comprehensive list.
+Feel free to explore the projects directory for a comprehensive list.
 
 ## Skills
 
