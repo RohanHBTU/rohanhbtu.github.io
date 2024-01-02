@@ -9,7 +9,7 @@ padding: 0;
 .progress-container {
   position: fixed;
   width: 100%;
-  top:97px;
+  top: 9.7rem;
   height: 6px;
   background: rgba(0,0,0,0);
   z-index: 1200;
